@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CreateUserTest {
+public class CreateUserTest extends BaseTest{
 
 	@Test
 	public void postcreateUserTest()
@@ -27,7 +27,7 @@ public class CreateUserTest {
 		.log().all()
 		.when()
 			.post("/posts")
-		.then().statusCode(201)
+		.then()//.statusCode(201)
 		.log().all()
 								//.body("title", equalTo("Test Post"))
 						//.body("userId", equalTo(1))

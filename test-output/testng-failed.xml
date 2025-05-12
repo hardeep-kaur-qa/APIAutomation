@@ -6,11 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="api.UpdateUserTest">
+      <class name="api.CreateUserTest">
         <methods>
-          <include name="updateUserTest"/>
+          <include name="postcreateUserTest"/>
         </methods>
-      </class> <!-- api.UpdateUserTest -->
+      </class> <!-- api.CreateUserTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,7 +21,7 @@ public class UpdateUserTest {
 			.header("Content-Type", "application/json")
 			.body(updatemap)
 		.when()
-			.put("/posts/")
+			.put("/posts/1")
 		.then()
 			.statusCode(200)
 			.body("Title", equalTo("This is updated map"));
